@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/lgn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <EditText
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/user"
+        android:hint="Username"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/lgn"
+        android:layout_alignLeft="@id/pass"
+        android:layout_alignStart="@+id/pass"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <EditText
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:hint="Password"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true">
+    </EditText>
+
+    <TextView
+        android:id="@+id/ket"
+        android:layout_width="322dp"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:text="*Pastikan Username dan Password benar"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <Button
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:id="@+id/btn_login"
+        android:text="LOGIN"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/ket"
+        android:layout_centerHorizontal="true">
+    </Button>
+
+    <TextView
+        android:id="@+id/ket2"
+        android:layout_width="322dp"
+        android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textColor="#000000"
+        android:text="belum punya akun?"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="200dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_login"
+        android:text="REGISTER"
+        tools:layout_editor_absoluteY="134dp"
+        tools:layout_editor_absoluteX="38dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="80dp">
+
+    </Button>
+</RelativeLayout>
